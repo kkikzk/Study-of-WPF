@@ -19,3 +19,10 @@ TextBlockをウィンドウに配置して『Hello world!!』と表示してみ�
 
 ---
 ## Case03
+ViewとViewModelを理解する。  
+Case02をDataBindingで実現してみよう。  
+どういう形でも良いので、TextBlockに表示する文字列をDataBindingでViewModelのデータを表示するようにしてみてください。   
+
+---
+### Case04
+
