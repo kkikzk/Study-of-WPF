@@ -25,4 +25,6 @@ Case02をDataBindingで実現してみよう。
 
 ---
 ### Case04
-
+INotifyPropertyChangedインターフェイスを理解する。  
+以下のイメージで、TextBoxに入力された文字列を大文字に変換してリアルタイムでTextBlockコントロールに表示するようにしてみてください。  
+![](./res/README/2020-11-14-11-28-53.png)
