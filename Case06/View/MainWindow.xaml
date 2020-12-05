@@ -22,11 +22,11 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0" Text="割られる数:" TextAlignment="Right" VerticalAlignment="Center" />
-        <TextBox Grid.Row="0" Grid.Column="1" Margin="2" />
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Lhs, Mode=TwoWay}" Margin="2" />
         <TextBlock Grid.Row="1" Grid.Column="0" Text="割る数:" TextAlignment="Right" VerticalAlignment="Center" />
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="2" />
-        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="2" Content="計算" />
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Rhs, Mode=TwoWay}" Margin="2" />
+        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding CalcCommand}" Margin="2" Content="計算" />
         <TextBlock Grid.Row="3" Grid.Column="0" Text="結果:" TextAlignment="Right" VerticalAlignment="Center" />
-        <TextBox Grid.Row="3" Grid.Column="1" Margin="2" />
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Result}" Margin="2" />
     </Grid>
 </Window>

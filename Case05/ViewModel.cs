@@ -49,10 +49,10 @@ namespace Case05
         {
             get
             {
-                return _clearCommand ?? (_clearCommand = new DelegateCommand(
+                return _clearCommand ??= new DelegateCommand(
                     _ => Text = string.Empty,
                     _ => !string.IsNullOrEmpty(Text)
-                ));
+                );
             }
         }
     }
