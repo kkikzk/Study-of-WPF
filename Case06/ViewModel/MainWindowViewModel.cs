@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using Case06.Model;
+using System.Windows.Input;
 
 namespace Case06.ViewModel
 {
@@ -29,7 +30,7 @@ namespace Case06.ViewModel
                 return _calcCommand ??= new DelegateCommand(
                     _ =>
                     {
-                        Result = Lhs / Rhs;
+                        Result = new Divider(Lhs, Rhs).Execute();
                     },
                     _ => true
                 );
