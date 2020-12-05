@@ -59,3 +59,8 @@ UIの見た目を改善。
 * [MaterialDesign](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit)
 
 ![](./res/README/2020-12-05-15-51-34.png)
+
+---
+### Case09
+List形式のデータを扱ってみましょう。  
+

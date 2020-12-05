@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Case08
+namespace Case09
 {
     /// <summary>
     /// Interaction logic for App.xaml
