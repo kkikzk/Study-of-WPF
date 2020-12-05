@@ -30,6 +30,7 @@
     <Window.DataContext>
         <vm:MainWindowViewModel />
     </Window.DataContext>
+    
     <!-- ********** -->
     <i:Interaction.Triggers>
         <vm:UserNotificationObjectTrigger SourceObject="{Binding UserNotificationObject}">

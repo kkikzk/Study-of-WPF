@@ -52,3 +52,10 @@ Case06で作ったアプリケーションの改善。
 実装はコードビハインドに書かないように。  
 
 ---
+### Case08
+UIの見た目を改善。  
+キャプチャのサンプルでは以下のパッケージを使用しました。  
+* [MahApp](https://mahapps.com/)
+* [MaterialDesign](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit)
+
+![](./res/README/2020-12-05-15-51-34.png)
