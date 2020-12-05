@@ -1,0 +1,45 @@
+﻿<Window x:Class="Case07.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Case07"
+        xmlns:v="clr-namespace:Case07.View"
+        xmlns:vm="clr-namespace:Case07.ViewModel"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors" 
+        mc:Ignorable="d"
+        Title="{Binding WindowTitle}"
+        Width="{Binding Width, Mode=TwoWay}"
+        SizeToContent="Height">
+    <Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>
+
+    <!-- ********** -->
+    <i:Interaction.Triggers>
+        <vm:UserNotificationObjectTrigger SourceObject="{Binding UserNotificationObject}">
+            <v:UserNotificationObjectAction />
+        </vm:UserNotificationObjectTrigger>
+    </i:Interaction.Triggers>
+    <!-- ********** -->
+    
+    <Grid Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="割られる数:" TextAlignment="Right" VerticalAlignment="Center" />
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Lhs, Mode=TwoWay}" Margin="2" />
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="割る数:" TextAlignment="Right" VerticalAlignment="Center" />
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Rhs, Mode=TwoWay}" Margin="2" />
+        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding CalcCommand}" Margin="2" Content="計算" />
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="結果:" TextAlignment="Right" VerticalAlignment="Center" />
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Result}" Margin="2" />
+    </Grid>
+</Window>

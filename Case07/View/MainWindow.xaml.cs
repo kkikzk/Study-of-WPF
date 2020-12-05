@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Case07
+namespace Case07.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
