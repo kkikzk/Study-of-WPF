@@ -30,15 +30,11 @@
     <Window.DataContext>
         <vm:MainWindowViewModel />
     </Window.DataContext>
-    
-    <!-- ********** -->
     <i:Interaction.Triggers>
         <vm:UserNotificationObjectTrigger SourceObject="{Binding UserNotificationObject}">
             <v:UserNotificationObjectAction />
         </vm:UserNotificationObjectTrigger>
     </i:Interaction.Triggers>
-    <!-- ********** -->
-
     <Grid Margin="2">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
