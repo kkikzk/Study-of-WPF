@@ -19,9 +19,12 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Menu>
+        <Menu Grid.Row="0">
             <MenuItem Header="追加(_A)" />
             <MenuItem Header="削除(_D)" />
         </Menu>
+        <DataGrid Grid.Row="1" ItemsSource="{Binding GridData}">
+            
+        </DataGrid>
     </Grid>
 </mah:MetroWindow>
