@@ -9,9 +9,17 @@ namespace Case09.ViewModel
             get; set;
         } = new ObservableCollection<GridDataViewModel>()
         {
-            new GridDataViewModel() { ID = 1, Name = "Hoge" },
-            new GridDataViewModel() { ID = 2, Name = "Fuga" },
+            new GridDataViewModel() { ID = 1, Name = "Hoge", OSType = OSType.Linux },
+            new GridDataViewModel() { ID = 2, Name = "Fuga", OSType = OSType.MacOS },
         };
+    }
+
+    public enum OSType
+    {
+        Windows,
+        Linux,
+        Unix,
+        MacOS,
     }
 
     public class GridDataViewModel : NotificationObject
@@ -28,6 +36,13 @@ namespace Case09.ViewModel
         {
             get { return _name; }
             set { SetProperty(ref _name, value); }
+        }
+
+        private OSType _osType;
+        public OSType OSType
+        {
+            get { return _osType; }
+            set { SetProperty(ref _osType, value); }
         }
     }
 }
